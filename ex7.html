@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <div></div>
+    <script>
+       var resposta=0;
+    var somacompra = 0;
+    var subtotal= 0;
+     var codigoproduto = 0;
+     var quantidadeproduto = 1;
+     
+     var Array = new Array();
+
+Array[100] = 10.9 
+Array[101] = 8.9 
+Array[102] = 14.9
+Array[103] = 13.9
+Array[104] = 16.9
+Array[105] = 22.9
+Array[106] = 4.9
+
+    do {
+        codigoproduto = parseFloat(prompt("Digite o codigo do produto "))
+              subtotal= Array[codigoproduto];
+              var quantidadeproduto = parseFloat(prompt("Digite a quantidade do produto "))
+              somacompra +=subtotal*quantidadeproduto;
+              resposta=parseFloat(prompt("O valor parcial da compra è R$ "+somacompra+" Digite 1 para comprar novo produto e 2 para finalizar compra "));
+                  
+    } while (resposta==1);
+
+    alert("O valor total de sua compra é R$ " +somacompra);
+    
+    
+
+     
+        
+
+    </script>
+</body>
+</html>

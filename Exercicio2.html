@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button onclick="soma('c')">Soma</button>
+    <button onclick="media('f')">Media</button>
+<div id ="output"></div>
+<script>
+    
+    var n1 = parseFloat(prompt("Digite o primeiro numero"));
+    var n2 = parseFloat(prompt("Digite o primeiro numero"));
+    var n3 = parseFloat(prompt("Digite o primeiro numero"));
+    var nr = 0
+    
+    
+    mostra();
+function mostra(){
+    var output = document.querySelector("#output");
+    output.innerHTML = nr
+}
+
+function soma(){
+    nr = n1+n2+n3; 
+    mostra();
+}
+function media(){
+    nr = (n1+n2+n3)/3; 
+    mostra();
+}
+
+
+
+
+</script>
+
+    
+</body>
+</html>

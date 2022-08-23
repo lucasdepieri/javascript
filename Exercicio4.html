@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button onclick="imc('c')">IMC</button>
+    
+<div id ="output"></div>
+<script>
+    
+    var n1 = parseFloat(prompt("Digite sua altura"));
+    var n2 = parseFloat(prompt("Digite seu peso"));
+    var nr = 0
+    
+    
+    mostra();
+function mostra(){
+    var output = document.querySelector("#output");
+    output.innerHTML = nr
+}
+
+function imc(){
+    nr = n2/(n1*n1); 
+    mostra();
+}
+
+
+
+
+
+</script>
+
+    
+</body>
+</html>

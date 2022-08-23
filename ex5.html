@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    var numero
+    <div></div>
+    <script>
+       var contador=0;
+    var somapar  = 0;
+     var somaimpar = 0;
+     var quantidadepar = 0;
+     var quantidadeimpar = 0;
+      
+    do {
+        var n1 = prompt("Digite um numero ")
+              n1=parseInt(n1)
+              if(n1%2==0){
+                somapar= somapar+n1
+                    quantidadepar++
+              } else{
+                somaimpar= somaimpar+n1
+                quantidadeimpar++
+              }
+                 
+                  contador++
+    } while (contador<10);
+    
+    
+
+      alert("a soma dos numeros par é "+somapar+ " e tem " +quantidadepar+" numeros Par")
+      alert("a soma dos numeros impar é "+somaimpar+ " e tem " +quantidadeimpar+" numeros Impar")
+        
+
+    </script>
+</body>
+</html>
